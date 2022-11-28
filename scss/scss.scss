@@ -92,7 +92,7 @@ header{
             text-align: center;
             border-radius: 24px;
                 p{
-                    font-size: 25px;
+                    font-size: 22px;
                     font-family: $tipografia_secundaria;
                     line-height: 40px;
                 }
@@ -114,41 +114,42 @@ header{
                     #e2d75a 0px 0px 12px 1px;
                 border-radius: 15px;}
     
-            h2, h3{
+            h2{
                 text-align: center;
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 40px;
                 font-weight: 400;
                 margin-bottom: 20px;}
         }
     }
 
-#contactanos{
-    display:flex;
-    flex-wrap: wrap;
-    height: 90%;
-    width: 85%;
-    margin: 50px auto;
-    justify-content: space-evenly;
-    align-items: center;
-        
-    .paginaformulario{
+    #contactanos{
         display:flex;
+        flex-wrap: wrap;
+        height: 90%;
+        width: 85%;
+        margin: 50px auto;
+        justify-content: space-evenly;
         align-items: center;
-        @include form(20px ,rgb(32, 66, 87));  
+            
+        .paginaformulario{
+            display:flex;
+            align-items: center;
+            @include form(20px ,rgb(32, 66, 87));  
+            }
+        .ubicacion{
+            display:flex;
+            align-items: center;
+            margin-top: 40px;
+            width: 500px;
+            height: 500px;
+            max-width: 90%;
+        }}    
+        .muestra{
+            margin: 60px 10px 60px 10px;
+        .pagina_contacto{
+            @include form(16px ,  rgb(46, 40, 3) ); }
         }
-    .ubicacion{
-        display:flex;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-        border-radius: 16% 84% 13% 87% / 79% 16% 84% 21%;}
-    }    
-    .muestra{
-        margin: 80px;
-    .pagina_contacto{
-        @include form(16px ,  rgb(46, 40, 3) ); }
-    }
 
 footer{
     height: 30px;
