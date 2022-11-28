@@ -1,0 +1,12 @@
+
+
+@mixin grid ($columnas, $filas, $spacio) {
+
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr );
+    grid-template-rows: repeat($filas, 1fr);
+    gap: $spacio;
+  @media screen and (max-width:600px){
+        grid-template-columns: 1fr;
+        gap: 1em}
+}
